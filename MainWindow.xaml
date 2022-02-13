@@ -1,0 +1,122 @@
+﻿<Window x:Class="Task_WPF15.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Task_WPF15"
+        mc:Ignorable="d"
+        Title="Task_WPF15" Height="450" Width="800">
+    <Grid>
+        <FlowDocumentScrollViewer>
+            <FlowDocument>
+                <Paragraph>
+                    Возможны ненулевые значения параметров из-за фонового счёта в дозиметрах.
+                </Paragraph>
+                <Paragraph>
+                    Проверить следующие параметры:
+                </Paragraph>
+                <List StartIndex="1" MarkerOffset="25">
+                    <ListItem>
+                        <Paragraph>
+                            В третьей строке сверху поле «DB» равно 4.
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            В третьей строке сверху поле «#» равно заводскому номеру прибора ДБ 4.
+                        </Paragraph>
+                    </ListItem>
+
+                    <ListItem>
+                        <Paragraph>
+                            В нижней строке
+                            <Run Foreground="LightGreen">«CS=___»</Run> отображается зелёным цветом.
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Нажать кнопку «8».
+                        </Paragraph>
+                    </ListItem>
+                </List>
+                <Paragraph>
+                    Проверить следующие параметры.
+                </Paragraph>
+                <Table CellSpacing="10">
+                    <Table.Columns>
+                        <TableColumn Width="300"/>
+                        <TableColumn />
+                    </Table.Columns>
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Bold>
+                                        Параметр
+                                    </Bold>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    <Bold>
+                                        Значение
+                                    </Bold>
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Во второй строке сверху
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                        EEED
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    в третьей строке сверху поле «DB»
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    3
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    В третьей строке сверху
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    3
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    В четвёртой строке сверху
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    <Run Foreground="Green">3 зелёным цветом</Run>
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+            </FlowDocument>
+            
+        </FlowDocumentScrollViewer>
+        
+    </Grid>
+</Window>
